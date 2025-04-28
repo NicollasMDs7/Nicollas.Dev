@@ -11,17 +11,7 @@ export function Navbar() {
   };
 
   return (
-    <div className="h-16 sm:h-18 flex items-center justify-between px-2 sm:px-4 fixed top-0 w-full z-50 bg-[#171718] border-b border-gray-700">
-      {/* Logo */}
-      <div className="pl-2 sm:pl-6 md:pl-12 lg:pl-36 flex items-center">
-        <Image
-          src="/images/logo.png"
-          alt="Perfil"
-          width={160}
-          height={60}
-          className="max-w-[100px] sm:max-w-[140px] md:max-w-[160px] lg:max-w-[180px] h-auto"
-        />
-      </div>
+    <div className="h-16 sm:h-18 flex items-center justify-end px-2 sm:px-4 fixed top-0 w-full z-50 bg-[#171718] border-b border-gray-700">
 
       {/* Menu para desktop e tablet */}
       <div className="hidden sm:flex justify-center flex-1">

@@ -4,7 +4,7 @@ import {
   Linkedin,
   Github,
   Instagram,
-  PhoneForwarded ,
+  PhoneForwarded,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -31,17 +31,19 @@ export function Icons() {
         </Link>
       </div>
 
-      <div className="flex gap-8 mt-4">
+      <div className="flex gap-4 mt-4">
         <div>
           <a
             href="https://wa.me/5511951783281?text=Ol%C3%A1%20Nick%2C%20vim%20pelo%20portf%C3%B3lio%20e%20gostaria%20de%20realizar%20um%20or%C3%A7amento!"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="w-[180px] h-[45px] bg-white text-black border-2
+            <Button
+              className="w-[150px] h-[45px] bg-white text-black border-2
              border-white rounded-full cursor-pointer hover:bg-gradient-to-r hover:from-[#984300] 
-             hover:via-[#FD6F00] hover:to-[#CA5900] hover:text-white ">
-              <PhoneForwarded  />
+             hover:via-[#FD6F00] hover:to-[#CA5900] hover:text-white "
+            >
+              <PhoneForwarded />
               Entre em contato
             </Button>
           </a>
@@ -50,13 +52,13 @@ export function Icons() {
           <a
             href="https://drive.google.com/uc?export=download&id=1jLUuPKxCod23WP6ae7hN-NiDlF6ivxx1"
             download
-            target="_blank"
             rel="noopener noreferrer"
           >
-           <Button className="w-[180px] h-[45px] bg-white text-black border-2 border-white rounded-full cursor-pointer
+            <Button
+              className="w-[120px] h-[45px] bg-white text-black border-1 border-white rounded-full cursor-pointer
             hover:bg-gradient-to-r hover:from-[#984300] hover:via-[#FD6F00] hover:to-[#CA5900]
-             hover:text-white">
-
+             hover:text-white"
+            >
               <Download className="mr-2" />
               Baixar CV
             </Button>
