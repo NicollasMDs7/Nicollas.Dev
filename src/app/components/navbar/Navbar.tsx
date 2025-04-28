@@ -2,55 +2,72 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <div className="bg-slate-900 h-12 flex items-center justify-between px-4 fixed top-0 w-full z-50">
-      <div className="pl-6 gap-6 flex items-center">
+    <div className="h-16 sm:h-18 flex items-center justify-between px-2 sm:px-4 fixed top-0 w-full z-50 bg-[#171718] border-b border-gray-700">
+      {/* Logo */}
+      <div className="pl-2 sm:pl-6 md:pl-12 lg:pl-36 flex items-center">
         <Image
           src="/images/logo.png"
           alt="Perfil"
-          width={80}
-          height={40}
-          className="max-w-[80%] sm:max-w-[200px] md:max-w-[400px] lg:max-w-[469px] h-auto"
+          width={160}
+          height={60}
+          className="max-w-[100px] sm:max-w-[140px] md:max-w-[160px] lg:max-w-[180px] h-auto"
         />
-        <button className="text-white  sm:block">idioma</button>
       </div>
 
-      {/* Menu items - escondido no mobile */}
-      <ul className="hidden sm:flex gap-4 text-white">
-        <li className="transition transform hover:scale-110 hover:text-cyan-400">
-          <a href="/">Sobre</a>
-        </li>
-        <li className="transition transform hover:scale-110 hover:text-cyan-400">
-          <a href="#formacao">Formações</a>
-        </li>
-        <li className="mr-10 transition transform hover:scale-110 hover:text-cyan-400">
-          <a href="#projetos">Projetos</a>
-        </li>
-      </ul>
+      {/* Menu para desktop e tablet */}
+      <div className="hidden sm:flex justify-center flex-1">
+        <ul className="flex flex-wrap gap-4 md:gap-8 lg:gap-16">
+          <li className="transition transform hover:scale-110 bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold">
+            <a href="#formacao">Formações</a>
+          </li>
+          <li className="transition transform hover:scale-110 bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold">
+            <a href="#projetos">Projetos</a>
+          </li>
+          <li className="transition transform hover:scale-110 bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold">
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
 
-      {/* Botão do menu - visível no mobile */}
+      {/* Botão do menu mobile */}
       <button
-        className="sm:hidden text-white"
-        onClick={() => setMenuOpen(!menuOpen)}
+        className="sm:hidden text-white p-2"
+        onClick={toggleMenu}
+        aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
       >
         {menuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
 
-      {/* Menu dropdown (mobile) */}
+      {/* Menu mobile */}
       {menuOpen && (
-        <ul className="absolute top-12 right-4 bg-slate-800 text-white flex flex-col gap-2 p-4 rounded-lg shadow-lg sm:hidden">
-          <li className="transition transform hover:scale-110 hover:text-cyan-400">
-            <a href="#hero">Sobre</a>
-          </li>
-          <li className="transition transform hover:scale-110 hover:text-cyan-400">
-            <a href="#formacao">Formações</a>
-          </li>
-          <li className="transition transform hover:scale-110 hover:text-cyan-400">
-            <a href="#projetos">Projetos</a>
-          </li>
-        </ul>
+        <div className="sm:hidden fixed inset-0 top-16 z-40">
+          <ul className="flex flex-col items-center justify-center gap-8 pt-10">
+            <li className="transition transform hover:scale-110 bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-2xl font-bold">
+              <a href="#formacao" onClick={toggleMenu}>
+                Formações
+              </a>
+            </li>
+            <li className="transition transform hover:scale-110 bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-2xl font-bold">
+              <a href="#projetos" onClick={toggleMenu}>
+                Projetos
+              </a>
+            </li>
+            <li className="transition transform hover:scale-110 bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-2xl font-bold">
+              <a href="#contato" onClick={toggleMenu}>
+                Contato
+              </a>
+            </li>
+          </ul>
+        </div>
       )}
     </div>
   );

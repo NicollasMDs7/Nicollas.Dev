@@ -3,7 +3,7 @@ import {Profile} from "./components/profile/profile";
 import { Navbar } from "./components/navbar/Navbar";
 export default function Home() {
   return (
-    <div className="w-full h-screen bg-black">
+    <div className="w-full h-screen  bg-[#171717]">
       <Navbar />
       <Profile />
       <About />
