@@ -40,17 +40,18 @@ export function Profile() {
   }, [isDeleting]);
 
   return (
-    <section className="w-full min-h-[100vh] flex flex-col justify-center items-center py-10 overflow-hidden">
-      <div className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[70%] flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12">
+    <section className="w-full min-h-[100vh] flex flex-col justify-center items-center py-16 lg:py-24 overflow-x-hidden">
+      <div className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[70%] flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-10 lg:mt-0">
         {/* Imagem - Em cima no mobile, à direita no desktop */}
         <div className="w-full sm:w-[70%] md:w-[60%] lg:w-[45%] flex justify-center items-center relative group cursor-pointer order-1 lg:order-2">
-          <div className="">
+          <div>
             <Image
               src="/images/perfil2.png"
               alt="Perfil"
               width={320}
               height={320}
               className="relative z-10 object-contain scale-90 sm:scale-95 md:scale-100"
+              priority
             />
           </div>
         </div>
@@ -79,7 +80,7 @@ export function Profile() {
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-xl sm:text-2xl md:text-3xl font-semibold">
                 +2
               </span>
-              <span className="text-xs sm:text-sm md:text-base lg:text-xl">
+              <span className="text-[10px] whitespace-nowrap sm:text-sm md:text-base lg:text-xl">
                 anos de experiência
               </span>
             </div>
@@ -88,7 +89,7 @@ export function Profile() {
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-xl sm:text-2xl md:text-3xl font-semibold">
                 +20
               </span>
-              <span className="text-xs sm:text-sm md:text-base lg:text-xl">
+              <span className="text-[10px] whitespace-nowrap sm:text-sm md:text-base lg:text-xl">
                 projetos concluídos
               </span>
             </div>
@@ -96,7 +97,7 @@ export function Profile() {
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-xl sm:text-2xl md:text-3xl font-semibold">
                 +50
               </span>
-              <span className="text-xs sm:text-sm md:text-base lg:text-xl">
+              <span className="text-[10px] whitespace-nowrap sm:text-sm md:text-base lg:text-xl">
                 clientes satisfeitos
               </span>
             </div>
@@ -105,14 +106,14 @@ export function Profile() {
       </div>
 
       {/* Nova div adicionada abaixo de todos os elementos */}
-      <div className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[70%] mt-26 flex justify-center flex-col items-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900]">
+      <div className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[70%] mt-16 lg:mt-24 flex justify-center flex-col items-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900]">
           Meus Serviços
         </h2>
-        <p className=" md:text-lg text-center text-white">
-          Ajudo a transformar sua ideia em realidade, criando soluções
-          digitais sob medida. Seja para tirar um projeto do papel ou dar vida
-          nova ao seu negócio online.
+        <p className="md:text-lg text-center text-white">
+          Ajudo a transformar sua ideia em realidade, criando soluções digitais
+          sob medida. Seja para tirar um projeto do papel ou dar vida nova ao
+          seu negócio online.
         </p>
       </div>
     </section>

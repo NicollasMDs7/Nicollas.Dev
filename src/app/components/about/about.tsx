@@ -86,8 +86,8 @@ export function About() {
               <p className="text-white text-base mb-3 leading-relaxed">
                 Hoje, com 24 anos, sigo em busca de experiência e crescimento,
                 sempre focado em trabalhar com o que realmente amo. Cada projeto
-                e desafio é uma oportunidade de aprender, evoluir e chegar ainda
-                mais longe.
+                é uma oportunidade de aprender, evoluir e chegar ainda mais
+                longe.
               </p>
 
               <p className="text-white text-base mb-3 leading-relaxed">
