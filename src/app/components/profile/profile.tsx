@@ -64,13 +64,14 @@ export function Profile() {
             Nicollas Dias
           </span>
           <div className="mt-2 md:mt-4 cursor-pointer transition transform hover:scale-100 text-center lg:text-left">
-            <strong className="bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-3xl md:text-5xl lg:text-6xl font-semibold relative">
+            <strong className="bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-3xl md:text-4xl lg:text-5xl font-semibold relative">
               {displayedText}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] animate-blink">
                 |
               </span>
             </strong>
           </div>
+
           <div className="mt-4 flex gap-4 justify-center lg:justify-start">
             <Icons />
           </div>
