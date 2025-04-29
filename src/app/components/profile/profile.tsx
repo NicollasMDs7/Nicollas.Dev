@@ -80,7 +80,7 @@ export function Profile() {
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-xl sm:text-2xl md:text-3xl font-semibold">
                 +2
               </span>
-              <span className="text-[10px] whitespace-nowrap sm:text-sm md:text-base lg:text-xl">
+              <span className="text-[10px] whitespace-nowrap sm:text-sm md:text-base ">
                 anos de experiência
               </span>
             </div>
@@ -89,7 +89,7 @@ export function Profile() {
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-xl sm:text-2xl md:text-3xl font-semibold">
                 +20
               </span>
-              <span className="text-[10px] whitespace-nowrap sm:text-sm md:text-base lg:text-xl">
+              <span className="text-[10px] whitespace-nowrap sm:text-sm md:text-base ">
                 projetos concluídos
               </span>
             </div>
@@ -97,7 +97,7 @@ export function Profile() {
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-xl sm:text-2xl md:text-3xl font-semibold">
                 +50
               </span>
-              <span className="text-[10px] whitespace-nowrap sm:text-sm md:text-base lg:text-xl">
+              <span className="text-[10px] whitespace-nowrap sm:text-sm md:text-base ">
                 clientes satisfeitos
               </span>
             </div>
