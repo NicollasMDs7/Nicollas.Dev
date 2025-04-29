@@ -40,7 +40,7 @@ export function Profile() {
   }, [isDeleting]);
 
   return (
-    <section className="w-full min-h-[100vh] flex flex-col justify-center items-center py-16 lg:py-24 overflow-x-hidden">
+    <section id="inicio" className="w-full min-h-[100vh] flex flex-col justify-center items-center py-16 lg:py-24 overflow-x-hidden">
       <div className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[70%] flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-10 lg:mt-0">
         {/* Imagem - Em cima no mobile, à direita no desktop */}
         <div className="w-full sm:w-[70%] md:w-[60%] lg:w-[45%] flex justify-center items-center relative group cursor-pointer order-1 lg:order-2">

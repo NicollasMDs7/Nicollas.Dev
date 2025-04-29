@@ -65,7 +65,7 @@ export function About() {
   }, []);
 
   return (
-    <section className="w-full flex justify-center items-center py-16">
+    <section id="sobre" className="w-full flex justify-center items-center py-16">
       <div className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[70%] flex flex-col items-center">
         <Card className="bg-[#222222] border-none shadow-lg w-full overflow-hidden">
           <div className="w-full text-center pt-6 pb-2">
