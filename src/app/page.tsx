@@ -1,12 +1,13 @@
-import { About } from "./components/about/about";
+
 import {Profile} from "./components/profile/profile";
 import { Navbar } from "./components/navbar/Navbar";
+import { Servicos } from "./components/servicos/services";
 export default function Home() {
   return (
-    <div className="w-full h-screen  bg-[#171717]">
+    <div className="w-full h-screen">
       <Navbar />
       <Profile />
-      <About />
+      <Servicos />
     </div>
   );
 }

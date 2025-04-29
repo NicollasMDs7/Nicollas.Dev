@@ -40,20 +40,20 @@ export function Profile() {
   }, [isDeleting]);
 
   return (
-    <section className="w-full min-h-[100vh] flex justify-center items-center py-10 overflow-hidden">
+    <section className="w-full min-h-[100vh] flex flex-col justify-center items-center py-10 overflow-hidden">
       <div className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[70%] flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12">
         {/* Imagem - Em cima no mobile, à direita no desktop */}
         <div className="w-full sm:w-[70%] md:w-[60%] lg:w-[45%] flex justify-center items-center relative group cursor-pointer order-1 lg:order-2">
-          <div className="absolute w-[280px] sm:w-[320px] md:w-[380px] lg:w-[420px] h-[280px] sm:h-[320px] md:h-[380px] lg:h-[420px] rounded-full bg-[#222222] group-hover:scale-105 transition-transform duration-300"></div>
-          <Image
-            src="/images/perfil2.png"
-            alt="Perfil"
-            width={300}
-            height={300}
-            className="relative z-10 object-contain scale-90 sm:scale-95 md:scale-100"
-          />
+          <div className="">
+            <Image
+              src="/images/perfil2.png"
+              alt="Perfil"
+              width={320}
+              height={320}
+              className="relative z-10 object-contain scale-90 sm:scale-95 md:scale-100"
+            />
+          </div>
         </div>
-
         {/* Conteúdo de texto - Embaixo no mobile, à esquerda no desktop */}
         <div className="w-full lg:w-[55%] flex flex-col justify-center order-2 lg:order-1 mt-6 lg:mt-0">
           <strong className="text-xl md:text-2xl font-semibold text-white text-center lg:text-left">
@@ -73,13 +73,11 @@ export function Profile() {
           <div className="mt-4 flex gap-4 justify-center lg:justify-start">
             <Icons />
           </div>
-
-          {/* Estatísticas */}
           <div className="w-full mt-6 md:mt-8 text-white bg-[#222222] flex rounded-lg overflow-hidden">
             <div className="w-1/3 flex flex-col p-2 sm:p-3 md:p-6 text-sm sm:text-base md:text-xl lg:text-2xl relative">
               <div className="absolute right-0 top-[20%] h-[60%] w-px bg-white"></div>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-xl sm:text-2xl md:text-3xl font-semibold">
-                2
+                +2
               </span>
               <span className="text-xs sm:text-sm md:text-base lg:text-xl">
                 anos de experiência
@@ -104,6 +102,18 @@ export function Profile() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Nova div adicionada abaixo de todos os elementos */}
+      <div className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[70%] mt-26 flex justify-center flex-col items-center">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900]">
+          Meus Serviços
+        </h2>
+        <p className=" md:text-lg text-center text-white">
+          Ajudo a transformar sua ideia em realidade, criando soluções
+          digitais sob medida. Seja para tirar um projeto do papel ou dar vida
+          nova ao seu negócio online.
+        </p>
       </div>
     </section>
   );
