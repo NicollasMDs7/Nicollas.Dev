@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nicollas Dias | Desenvolvedor Front-end",
+  title: "Nicollas Dias | Desenvolvedor Web",
   description: "Portfolio de Nicollas Dias, desenvolvedor web",
 };
 
