@@ -116,7 +116,13 @@ export function Servicos() {
   ];
 
   // Render a service card
-  const renderCard = (service, index) => (
+  const renderCard = (service: {
+    icon: React.ReactNode;
+    title: string;
+    description: string;
+    content: string;
+    link: string;
+  }, index: number) => (
     <Card 
       key={index}
       className={cn(
@@ -157,7 +163,6 @@ export function Servicos() {
       </CardFooter>
     </Card>
   );
-
   return (
     <section className="w-full flex justify-center">
       <div className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[70%]">
