@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nicollas Medeiros | Desenvolvedor Front-end",
-  description: "Portfolio de Nicollas Medeiros, desenvolvedor front-end e UI/UX designer",
+  title: "Nicollas Dias | Desenvolvedor Front-end",
+  description: "Portfolio de Nicollas Dias, desenvolvedor web",
 };
 
 export default function RootLayout({
@@ -28,7 +28,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-
       </body>
     </html>
   );
