@@ -2,8 +2,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
 
 export function About() {
   const techIcons = [
@@ -121,23 +119,6 @@ export function About() {
                     ))}
                   </div>
                 </div>
-              </div>
-              <div className="flex justify-center mt-12">
-                <a
-                  href="https://drive.google.com/uc?export=download&id=1jLUuPKxCod23WP6ae7hN-NiDlF6ivxx1"
-                  download
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    className="w-[180px] h-[45px]  border-1 border-white rounded-full cursor-pointer
-                  bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] 
-                  hover:opacity-90 transition-opacity hover:scale-110 duration-300
-          "
-                  >
-                    <Download className="mr-2" />
-                    Baixar CV
-                  </Button>
-                </a>
               </div>
             </div>
 

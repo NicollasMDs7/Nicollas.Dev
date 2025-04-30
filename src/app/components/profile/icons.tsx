@@ -40,7 +40,7 @@ export function Icons() {
           >
             <Button
               className="w-[150px] h-[45px] bg-white text-black border-2
-             border-white rounded-full cursor-pointer hover:bg-gradient-to-r hover:from-[#984300] 
+             border-white rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#984300] 
              hover:via-[#FD6F00] hover:to-[#CA5900] hover:text-white "
             >
               <PhoneForwarded />
@@ -55,7 +55,7 @@ export function Icons() {
             rel="noopener noreferrer"
           >
             <Button
-              className="w-[120px] h-[45px] bg-white text-black border-1 border-white rounded-full cursor-pointer
+              className="w-[120px] h-[45px] bg-white text-black border-1 border-white rounded-lg cursor-pointer
             hover:bg-gradient-to-r hover:from-[#984300] hover:via-[#FD6F00] hover:to-[#CA5900]
              hover:text-white"
             >

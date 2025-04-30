@@ -40,9 +40,11 @@ export function Profile() {
   }, [isDeleting]);
 
   return (
-    <section id="inicio" className="w-full min-h-[100vh] flex flex-col justify-center items-center py-16 lg:py-24 overflow-x-hidden">
+    <section
+      id="inicio"
+      className="w-full min-h-[100vh] flex flex-col justify-center items-center py-16 lg:py-24 overflow-x-hidden"
+    >
       <div className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[70%] flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-10 lg:mt-0">
-        {/* Imagem - Em cima no mobile, à direita no desktop */}
         <div className="w-full sm:w-[70%] md:w-[60%] lg:w-[45%] flex justify-center items-center relative group cursor-pointer order-1 lg:order-2">
           <div>
             <Image
@@ -55,7 +57,6 @@ export function Profile() {
             />
           </div>
         </div>
-        {/* Conteúdo de texto - Embaixo no mobile, à esquerda no desktop */}
         <div className="w-full lg:w-[55%] flex flex-col justify-center order-2 lg:order-1 mt-6 lg:mt-0">
           <strong className="text-xl md:text-2xl font-semibold text-white text-center lg:text-left">
             Olá, Eu sou o
@@ -106,15 +107,15 @@ export function Profile() {
         </div>
       </div>
 
-      {/* Nova div adicionada abaixo de todos os elementos */}
       <div className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[70%] mt-16 lg:mt-24 flex justify-center flex-col items-center">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 bg-clip-text text-transparent bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900]">
           Meus Serviços
         </h2>
         <p className="md:text-lg text-center text-white">
-          Ajudo a transformar sua ideia em realidade, criando soluções digitais
-          sob medida. Seja para tirar um projeto do papel ou dar vida nova ao
-          seu negócio online.
+          Transformo linhas de código em experiências memoráveis, esculpindo
+          soluções digitais que dão vida às suas ideias. Do primeiro rascunho ao
+          produto final, construo pontes entre sua visão e o mundo digital,
+          reinventando a presença online do seu negócio.
         </p>
       </div>
     </section>
