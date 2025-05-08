@@ -39,6 +39,14 @@ export function Projetos() {
 
   const projectsData: Project[] = [
     {
+      title: "EntreLinhasJS",
+      description:
+        "Projeto onde entreguei uma Leading Page de um site de costureira, ultilizando NextsJS, Supabase, TailwindCSS e TypeScript.",
+      image: "/images/entrelinhas.jpg",
+      github: "https://github.com/NicollasMDs7/EntreLinhasJS",
+      vercel: "https://entre-linhas-js.vercel.app/",
+    },
+    {
       title: "One-Climas",
       description:
         "Projeto onde entreguei um projeto de um site de clima, consumindo a API da OpenWeather.",
@@ -78,14 +86,14 @@ export function Projetos() {
       github: "https://github.com/NicollasMDs7/ProjetoAPI/tree/main",
       vercel: null,
     },
-    {
-      title: "Crud",
-      description:
-        "Projeto onde criei uma API de um CRUD de usuários, utilizando o .Net",
-      image: "/images/crud.png",
-      github: "https://github.com/NicollasMDs7/ProjetoAPI/tree/main",
-      vercel: null,
-    },
+    // {
+    //   title: "Crud",
+    //   description:
+    //     "Projeto onde criei uma API de um CRUD de usuários, utilizando o .Net",
+    //   image: "/images/crud.png",
+    //   github: "https://github.com/NicollasMDs7/ProjetoAPI/tree/main",
+    //   vercel: null,
+    // },
     // {
     //   title: "Task-M",
     //   description:
