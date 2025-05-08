@@ -37,7 +37,7 @@ export async function sendEmail(mensagemData: MensagemData) {
 
   // Email para o administrador (você)
   const adminMailOptions = {
-    from: `"EntreLinhasJS" <${process.env.EMAIL_USER}>`,
+    from: `"Nícollas Dias- Portfolio" <${process.env.EMAIL_USER}>`,
     to: process.env.NOTIFICATION_EMAIL || process.env.EMAIL_USER,
     subject: `Nova mensagem de ${nome} - ${opcao}`,
     html: `
@@ -76,9 +76,9 @@ export async function sendEmail(mensagemData: MensagemData) {
           <p style="margin: 10px 0;">Obrigado por entrar em contato conosco! Recebemos sua mensagem e retornaremos em breve.</p>
           
           <div style="margin: 30px 0; text-align: center; background-color: #2a2a2a; padding: 20px; border-radius: 8px; border: 1px solid #333;">
-            <h2 style="color: #FD6F00; margin-bottom: 15px;">Enquanto aguarda o contato estou te presenteando com um cupom de 5% de desconto!</h2>
+            <h2 style="color: #FD6F00; margin-bottom: 15px;">Enquanto aguarda o contato estou te encaminhando um cupom de desconto!</h2>
             <div style="background-color: #FD6F00; color: white; font-weight: bold; padding: 15px; border-radius: 5px; font-size: 20px; letter-spacing: 2px; box-shadow: 0 0 10px rgba(253, 111, 0, 0.5);">
-              Nicollas5%
+            Nicollas5%
             </div>
             <p style="margin-top: 15px; font-size: 14px; color: #ccc;">Use este código na sua próxima compra em nossa loja.</p>
             <p style="margin-top: 15px; font-size: 14px; color: #ccc;">Entre em contato no nosso Whatsaap: <a href="${whatsappLink}" style="color: #FD6F00; text-decoration: none;">Clique aqui</a></p>
